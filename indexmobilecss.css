@@ -9,12 +9,10 @@
 }
 
 html{
-    height: 100%; 
     width: 100%;
 }
 
 body {
-    height: 100%;
     width: 100%;
     font-size: 100%;
     background: linear-gradient(68.15deg, #0C1821 16.62%, #324A5F 85.61%);
