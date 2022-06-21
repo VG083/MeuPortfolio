@@ -43,7 +43,7 @@ body {
 
 .content {
     margin-bottom: 48px; /* Distancia o footer do content */
-    border-top: 0.4px solid #F4F9E9; /* Cria a linha de divisão entre o header e content */
+    border-top: 0.4px solid #CCC9DC; /* Cria a linha de divisão entre o header e content */
 }
 
 .content-main {
@@ -85,7 +85,7 @@ body {
 }
 
 .content-secondary-title {
-    border-top: 0.4px solid #F4F9E9; /* Cria a linha de divisão entre os itens em content */
+    border-top: 0.4px solid #CCC9DC; /* Cria a linha de divisão entre os itens em content */
     padding-top: 10px; /* Deixa o espaçamento entre o topo */
     font-family: 'Comfortaa', cursive; /* Muda o tipo de fonte */
     color: #F4F9E9; /* Muda a cor da fonte */
@@ -102,7 +102,7 @@ body {
 
 .footer {
     padding: 20px; /* Deixa o espaçamento entre elementos */
-    border-top: 0.4px solid #F4F9E9; /* Cria a linha de divisão entre content e footer */
+    border-top: 0.4px solid #CCC9DC; /* Cria a linha de divisão entre content e footer */
     display: flex; /* Transforma a classe em flexbox */
     flex-direction: row; /* Deixa o flexbox na direção horizontal */
     justify-content: center; /* Deixa os elementos centralizados com espaço nas laterais */
