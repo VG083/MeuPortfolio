@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="indexcss.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="indexmobilecss.css">
 </head>
 <body>
     <header class="header">
@@ -24,6 +25,24 @@
                 <!--
                     A classe botão neste caso está deixando o site um pouco feio então optei por não utilizar ela por enquanto, quando for usar lembrar de colocar a content-image com height de 350px
                     <button class="content-main-text-button">Me siga</button>
+
+                    CSS:
+                    .content-main-text-button {
+                        background-color: #324A5F; /* Define a cor do botão */
+                        width: 180px; /* Define largura do botão */
+                        height: 50px; /* Define altura do botão */
+                        border: none; /* Tira a borda padrão do css */
+                        box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25); /* Deixa um efeito de sombra abaixo do botão */
+                        border-radius: 10px; /* Deixa a borda arredondada */
+                        font-family: 'Comfortaa', cursive; /* Muda o tipo de fonte */
+                        color: #CCC9DC; /* Muda a cor da fonte */
+                        font-weight: 1000; /* Aumenta a grossura da letra */
+                        font-size: 20px; /* Muda o tamanho do texto */
+                    }
+
+                    .content-main-text-button:hover {
+                        background-color: rgba(236, 214, 196, 0.53); /* Faz uma sombra quando o usuário passar o mouse pelo botão */
+                    }
                 -->
             </div><!-- Content main text -->
         </section><!-- Content main -->
