@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Quicksand:wght@300&display=swap');
+
+* {
+    /* Reinicia todo o css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #0C1821 16.62%, #324A5F 85.61%);
+}
+
+.header {
+    display: flex; /* Transforma a classe em flexbox */
+    flex-direction: row; /* Deixa o flexbox na direção horizontal */
+    align-items: center; /* Alinha os tópicos do menu no centro da imagem */
+    justify-content: space-around; /* Deixa os elementos centralizados com espaço nas laterais */
+    padding: 20px; /* Deixa o espaçamento entre o topo da página e o ícone */
+}
+
+.header-image {
+    height: 80px; /* Limita o tamanho da classe header-image */
+}
+
+.header-menu {
+    display: flex; /* Transforma a classe em flexbox */
+    gap: 32px;/* Faz um distanciamento nos itens da flexbox */
+}
+
+.header-menu-item {
+    font-family: 'Quicksand', sans-serif; /* Muda o tipo de fonte */
+    color: #F4F9E9; /* Muda a cor da fonte */
+    font-weight: 1000; /* Aumenta a grossura da letra */
+    font-size: 18px; /* Muda o tamanho do texto */
+}
+
+.content-menu-item:hover {
+    color: #ccc9dc0c;
+}
+
+.content {
+    margin-bottom: 48px; /* Distancia o footer do content */
+    border-top: 0.4px solid #CCC9DC; /* Cria a linha de divisão entre o header e content */
+}
+
+.content-main {
+    display: flex; /* Transforma a classe em flexbox */
+    flex-direction: row; /* Deixa o flexbox na direção horizontal */
+    align-items: center; /* Alinha os tópicos do menu no centro da imagem */
+    justify-content: center; /* Deixa os elementos centralizados */
+}
+
+.content-image {
+    height: 300px; /* Define tamanho da imagem */
+}
+
+.content-secondary {
+    display: flex; /* Transforma a classe em flexbox */
+    flex-direction: column; /* Deixa o flexbox na direção de colunas */
+    align-items: center; /* Alinha os tópicos do menu no centro da imagem */
+    justify-content: center; /* Deixa os elementos centralizados */
+}
+
+.content-secondary-title {
+    border-top: 0.4px solid #CCC9DC; /* Cria a linha de divisão entre os itens em content */
+    padding-top: 10px; /* Deixa o espaçamento entre o topo */
+    font-family: 'Comfortaa', cursive; /* Muda o tipo de fonte */
+    color: #F4F9E9; /* Muda a cor da fonte */
+    font-weight: 1000; /* Aumenta a grossura da letra */
+    font-size: 30px; /* Muda o tamanho do texto */
+}
+
+.content-secondary-text {
+    font-family: 'Quicksand', sans-serif; /* Muda o tipo de fonte */
+    color: #F4F9E9; /* Muda a cor da fonte */
+    font-weight: 1000; /* Aumenta a grossura da letra */
+    font-size: 18px; /* Muda o tamanho do texto */
+}
+
+.footer {
+    padding: 20px; /* Deixa o espaçamento entre elementos */
+    border-top: 0.4px solid #CCC9DC; /* Cria a linha de divisão entre content e footer */
+    display: flex; /* Transforma a classe em flexbox */
+    flex-direction: row; /* Deixa o flexbox na direção horizontal */
+    justify-content: center; /* Deixa os elementos centralizados com espaço nas laterais */
+}
+
+.footer-menu {
+    display: flex; /* Transforma a classe em flexbox */
+    gap: 32px;/* Faz um distanciamento nos itens da flexbox */
+}
+
+.footer-menu-item {
+    font-family: 'Quicksand', sans-serif; /* Muda o tipo de fonte */
+    color: #F4F9E9; /* Muda a cor da fonte */
+    font-weight: 1000; /* Aumenta a grossura da letra */
+    font-size: 18px; /* Muda o tamanho do texto */
+}
