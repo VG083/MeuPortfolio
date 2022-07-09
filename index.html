@@ -1,62 +1,281 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" type="text/css" href="indexcss.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="indexmobilecss.css">
-</head>
-<body>
-    <header class="header">
-        <img class="header-image"src="images/icone.png" alt="Ícone">
-        <nav class="header-menu">
-            <a class="header-menu-item" href="https://github.com/VG083?tab=repositories">Meus Projetos</a>
-            <a class="header-menu-item" href="archives/curriculo.pdf">Meu Currículo</a>
-            <a class="header-menu-item" href="contatos.html">Contatos</a>
-        </nav><!-- Header menu -->
-    </header>
-    <main class="content">
-        <section class="content-main">
-            <img class="content-image" src="images/logo.png" alt="Logo">
-            <div class="content-main-text">
-                <h1 class="content-main-text-title">Olá, eu sou VG</h1>
-                <h2 class="content-main-text-subtitle">Seja bem vindo ao meu portfólio</h2>
-                <!--
-                    A classe botão neste caso está deixando o site um pouco feio então optei por não utilizar ela por enquanto, quando for usar lembrar de colocar a content-image com height de 350px
-                    <button class="content-main-text-button">Me siga</button>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Portfólio</title>
+        <!-- FAVICON -->
+        <!-- REMIX ICONS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- HEADER PROFILE -->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-                    CSS:
-                    .content-main-text-button {
-                        background-color: #324A5F; /* Define a cor do botão */
-                        width: 180px; /* Define largura do botão */
-                        height: 50px; /* Define altura do botão */
-                        border: none; /* Tira a borda padrão do css */
-                        box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25); /* Deixa um efeito de sombra abaixo do botão */
-                        border-radius: 10px; /* Deixa a borda arredondada */
-                        font-family: 'Comfortaa', cursive; /* Muda o tipo de fonte */
-                        color: #CCC9DC; /* Muda a cor da fonte */
-                        font-weight: 1000; /* Aumenta a grossura da letra */
-                        font-size: 20px; /* Muda o tamanho do texto */
-                    }
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="assets/img/logo2.png" alt="">
+                        </div>
+                    </div>
+                    <h2 class="profile__name">VG</h2>
+                    <h3 class="profile__profession">Estudante de Ciência da Computação</h3>
+                    <ul class="profile__social">
+                        <a href="https://github.com/VG083" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jose-nilton083/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5583986351165&text=Ol%C3%A1" target="_blank" class="profile__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">7</h3>
+                        <p class="profile__info-description">
+                            Years of <br> work
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+124</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">96</h3>
+                        <p class="profile__info-description">
+                            Satisfied <br> customers
+                        </p>
+                    </div>
+                </div>
 
-                    .content-main-text-button:hover {
-                        background-color: rgba(236, 214, 196, 0.53); /* Faz uma sombra quando o usuário passar o mouse pelo botão */
-                    }
-                -->
-            </div><!-- Content main text -->
-        </section><!-- Content main -->
-        <section class="content-secondary">
-            <h3 class="content-secondary-title">Quem eu sou?</h3>
-            <p class="content-secondary-text">Meu nome é <strong>José Nilton</strong>, tenho 19 anos e sou estudante de <strong>Ciência da Computação</strong> na Unipê em <strong>João Pessoa(PB)</strong>.</p>
-            <p class="content-secondary-text">Esse site foi criado para servir como um portfólio onde eu irei disponibilizar meus projetos pessoais.</p>
-        </section><!-- Content secondary -->
-    </main>
-    <footer class="footer">
-        <nav class="footer-menu">
-            <a class="footer-menu-item" href="https://www.linkedin.com/in/jose-nilton083/">LinkedIn</a>
-            <a class="footer-menu-item" href="https://github.com/VG083">GitHub</a>
-        </nav><!-- Footer menu -->
-    </footer>
-</body>
+                <div class="profile__buttons">
+                    <a download="" href="assets/doc/curriculo.pdf" class="button">
+                        <i class="ri-folder-download-line"></i> Download CV
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <a href="" target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <a href="" target="_blank" class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <section class="filters container">
+                <!-- FILTERS TABS -->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!-- PROJECTS -->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <img src="assets/img/projeto.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitles">Inteligência Artificial</span>
+                                    <h3 class="projects__title">Detector de Veículos e Pedestres</h3>
+                                    <a href="" class="projects__button button button__small">
+                                        <i class="ri-link-m"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/projeto.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitles">Em breve</span>
+                                    <h3 class="projects__title">Em breve</h3>
+                                    <a href="" class="projects__button button button__small">
+                                        <i class="ri-link-m"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/projeto.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitles">Em breve</span>
+                                    <h3 class="projects__title">Em breve</h3>
+                                    <a href="" class="projects__button button button__small">
+                                        <i class="ri-link-m"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                    </div>
+
+                    <!-- SKILLS -->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Frontend developer
+                            </h3>
+
+                            <div class="skills__box">
+                                <div class="skills_group">
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Javascript</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills_group">
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Backend developer
+                            </h3>
+
+                            <div class="skills__box">
+                                <div class="skills_group">
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">PHP</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">C</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills_group">
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-check-fill"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Node JS</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; VG. All rights reserved
+            </span>
+        </footer>
+
+        <!-- SCROLLREVEAL -->
+        <script src=""></script>
+
+        <!-- MAIN JS -->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
