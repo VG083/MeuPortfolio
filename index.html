@@ -80,17 +80,158 @@
             <section class="filters container">
                 <!-- FILTERS TABS -->
                 <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        Projetos
+                    <button class="filters__button filter-tab-active" data-target="#skills">
+                        Sobre mim
                     </button>
-                    <button class="filters__button" data-target="#skills">
-                        Habilidades
+                    <button class="filters__button" data-target="#projects">
+                        Meus projetos
                     </button>
                 </ul>
 
                 <div class="filters__sections">
+                    <!-- ABOUT ME -->
+                    <div class="aboutme__main-content grid filters__active" data-content id="skills">
+                        <div class="aboutme__area">
+                            <h3 class="aboutme__title">
+                                Quem eu sou
+                            </h3>
+
+                            <div class="aboutme__box">
+                                <div class="aboutme__text">
+                                    <p>Eu sou um estudante que está sempre procurando novidades sobre o mundo da tecnologia e atualmente eu estou em busca de uma oportunidade na área de TI, onde consiga colocar em prática meus conhecimentos que venho adquirindo com meus estudos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="aboutme__content grid">
+                            <div class="aboutme__area">
+                                <h3 class="aboutme__title">
+                                    Tecnologias Frontend
+                                </h3>
+    
+                                <div class="aboutme__box">
+                                    <div class="skills_group">
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">HTML</h3>
+                                                <span class="skills__level">Intermediário</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">CSS</h3>
+                                                <span class="skills__level">Intermediário</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">Javascript</h3>
+                                                <span class="skills__level">Básico</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="skills_group">
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">React</h3>
+                                                <span class="skills__level">Básico</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">Bootstrap</h3>
+                                                <span class="skills__level">Básico</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">Git</h3>
+                                                <span class="skills__level">Intermediário</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="skills__area">
+                                <h3 class="aboutme__title">
+                                    Tecnologias Backend
+                                </h3>
+    
+                                <div class="aboutme__box">
+                                    <div class="skills_group">
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">PHP</h3>
+                                                <span class="skills__level">Básico</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">MySQL</h3>
+                                                <span class="skills__level">Básico</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">C</h3>
+                                                <span class="skills__level">Intermediário</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="skills_group">
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">Python</h3>
+                                                <span class="skills__level">Avançado</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="skills__data">
+                                            <i class="ri-check-fill"></i>
+    
+                                            <div>
+                                                <h3 class="skills__name">Node JS</h3>
+                                                <span class="skills__level">Básico</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                     <!-- PROJECTS -->
-                    <div class="projects__content grid filters__active" data-content id="projects">
+                    <div class="projects__content grid" data-content id="projects">
                         <article class="projects__card">
                             <img src="assets/img/projeto.jpg" alt="" class="projects__img">
 
@@ -134,132 +275,6 @@
                         </article>
 
                         
-                    </div>
-
-                    <!-- SKILLS -->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title">
-                                Tecnologias Frontend
-                            </h3>
-
-                            <div class="skills__box">
-                                <div class="skills_group">
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">HTML</h3>
-                                            <span class="skills__level">Intermediário</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">CSS</h3>
-                                            <span class="skills__level">Intermediário</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">Javascript</h3>
-                                            <span class="skills__level">Básico</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skills_group">
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">React</h3>
-                                            <span class="skills__level">Básico</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">Bootstrap</h3>
-                                            <span class="skills__level">Básico</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">Git</h3>
-                                            <span class="skills__level">Intermediário</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills__area">
-                            <h3 class="skills__title">
-                                Tecnologias Backend
-                            </h3>
-
-                            <div class="skills__box">
-                                <div class="skills_group">
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">PHP</h3>
-                                            <span class="skills__level">Básico</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">MySQL</h3>
-                                            <span class="skills__level">Básico</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">C</h3>
-                                            <span class="skills__level">Intermediário</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skills_group">
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">Python</h3>
-                                            <span class="skills__level">Avançado</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-check-fill"></i>
-
-                                        <div>
-                                            <h3 class="skills__name">Node JS</h3>
-                                            <span class="skills__level">Básico</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
