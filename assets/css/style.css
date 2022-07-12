@@ -103,6 +103,18 @@ body.dark-theme {
     Color changes in some parts of
     the website, in Light theme
 */
+.dark-theme .projects__modal {
+    background: linear-gradient(45deg, hsl(207, 90%, 50%),  hsl(207, 90%, 40%),  hsl(207, 90%, 30%));
+    background-size: 300% 300%;
+    animation: colors 9s ease infinite;
+}
+
+.dark-theme #footer__image {
+    width: 22px;
+    height: 27.17px;
+    filter: invert();
+}
+
 .dark-theme .button__gray {
     background-color: var(--container-color);
 }
@@ -345,6 +357,22 @@ body.dark-theme {
     align-items: flex-end;
     padding: 1.5rem 1.25rem;
     transition: .3s;
+    background: linear-gradient(45deg, hsl(207, 90%, 71%),  hsl(207, 90%, 60%),  hsl(207, 90%, 50%));
+    background-size: 300% 300%;
+    animation: colors 9s ease infinite;
+}
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
 }
 
 .projects__subtitle,
@@ -433,6 +461,10 @@ body.dark-theme {
     text-align: center;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
+}
+
+#footer__image {
+    width: 20px;
 }
 
 /* SCROLL BAR */
