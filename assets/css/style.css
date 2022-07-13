@@ -654,5 +654,5 @@ body.dark-theme {
     padding: 1.15rem 1.5rem;
     border-radius: .5rem;
     box-shadow: 0 8px 24px hsl(var(--hue), var(--sat), var(--lig), .25);
-    transition: .3s;
+    transition: .1s;
 }
