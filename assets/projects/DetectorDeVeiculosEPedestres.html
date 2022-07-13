@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto: Detector De Veículos e Pedestres</title>
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+        <!-- REMIX ICONS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/detectorDeVeiculosEPedestres.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            
+            <h1 class="project__title"><br>Detector De Veículos e Pedestres</h1>
+            <h3 class="project__subtitle">Inteligência Artificial</h3>
+        </header>
+
+        <!-- MAIN -->
+        <main class="profile container">
+            <p class="project__text">
+                Neste projeto eu fiz um programa de inteligência artificial capaz de identificar a passagem de pessoas e veículos em imagens de câmera através de fotos ou vídeos.
+            </p>
+            <div class="project__images">
+                <img src="../img/detectorDeVeiculosEPedestres/fotoOriginal.jpg" alt="Imagem antes de ser processada pelo programa">
+                <img src="../img/detectorDeVeiculosEPedestres/fotoProcessada.jpg" alt="Imagem depois de ser processada pelo programa">
+            </div>
+            <p class="project__text">
+                Foi utilizado um arquivo .py para rodar o programa principal que tem como auxílio dois arquivos .xml contendo um haar cascade capaz de reconhecer pedestres, disponível dentro da biblioteca do opencv no github, e um haar cascade que contém dados para reconhecer carros, que foi disponibilizada pelo youtuber Clever Programmer.
+            </p>
+            <p class="project__text">
+                Também está disponível dentro do programa um vídeo e 3 fotos para o usuário testar o reconhecimento caso não tenha uma câmera disponível para rodar o programa.
+            </p>
+            <p class="project__text">
+                Caso queira assistir um vídeo do programa em funcionamento basta clicar neste 
+                <a href="https://youtu.be/htQTw_FcHy8">link</a>
+            </p>
+            <div class="project__button">
+                <a href="https://github.com/VG083/DetectorDeVeiculosEPedestres" class="button__viewCode">
+                    <i class="ri-code-s-slash-line"></i> Ver código
+                </a>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; VG. All rights reserved
+                <br>
+                <img src="../img/footer.png" id="footer__image" alt="">
+            </span>
+        </footer>
+
+        <!-- SCROLLREVEAL -->
+        <script src="../js/scrollreveal.min.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="../js/main.js"></script>
+    </body>
+</html>
