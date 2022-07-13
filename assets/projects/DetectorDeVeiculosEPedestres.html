@@ -25,21 +25,27 @@
         <!-- MAIN -->
         <main class="profile container">
             <p class="project__text">
-                Neste projeto eu fiz um programa de inteligência artificial capaz de identificar a passagem de pessoas e veículos em imagens de câmera através de fotos ou vídeos.
+                Neste projeto eu construí um programa de inteligência artificial capaz de identificar a passagem de pessoas e veículos em imagens de câmera através de fotos ou vídeos. Na primeira foto a seguir podemos ver como uma imagem seria recebida pelo, na segunda vemos o resultado que é retornado pelo programa.
             </p>
             <div class="project__images">
                 <img src="../img/detectorDeVeiculosEPedestres/fotoOriginal.jpg" alt="Imagem antes de ser processada pelo programa">
                 <img src="../img/detectorDeVeiculosEPedestres/fotoProcessada.jpg" alt="Imagem depois de ser processada pelo programa">
             </div>
             <p class="project__text">
-                Foi utilizado um arquivo .py para rodar o programa principal que tem como auxílio dois arquivos .xml contendo um haar cascade capaz de reconhecer pedestres, disponível dentro da biblioteca do opencv no github, e um haar cascade que contém dados para reconhecer carros, que foi disponibilizada pelo youtuber Clever Programmer.
+                Neste projeto eu construí um programa de inteligência artificial capaz de identificar a passagem de pessoas e veículos em imagens de câmera através de fotos ou vídeos. Na primeira foto a seguir podemos ver como uma imagem seria recebida pelo, na segunda vemos o resultado que é retornado pelo programa.
             </p>
             <p class="project__text">
-                Também está disponível dentro do programa um vídeo e 3 fotos para o usuário testar o reconhecimento caso não tenha uma câmera disponível para rodar o programa.
+                Para rodar o arquivo principal desse programa eu utilizei a linguagem Python, a biblioteca do OpenCV e dois módulos que eu mesmo criei durante o processo de construção do programa.
             </p>
             <p class="project__text">
-                Caso queira assistir um vídeo do programa em funcionamento basta clicar neste 
-                <a href="https://youtu.be/htQTw_FcHy8">link</a>
+                Um dos módulos que criei foi feito para organizar de uma forma melhor a interface do programa e realizar algumas funções de tratamento de erros. O segundo módulo contém a Inteligência Artificial responsável por fazer a leitura de imagem e entregar o resultado final ao usuário utilizando os métodos importados da biblioteca do OpenCV. 
+            </p>
+            <p class="project__text">
+                Para a IA ter uma base de veículos e pedestres na imagem eu utilizei dois arquivos .xml contendo haar cascades capazes de reconhecer pedestres e veículos. O haar cascade que auxilia o software a reconhecer os pedestres é disponibilizado pela própria biblioteca doOpenCV no github. Enquanto o haar cascade que contém dados para reconhecer os veículos foi disponibilizado pelo youtuber Clever Programmer. 
+            </p>
+            <p class="project__text">
+                Nos arquivos do programa eu disponibilizei três imagens e dois vídeos que o usuário ao baixar o código no github pode fazer seus testes com eles caso não tenha outras imagens ou uma câmera para utilizar no programa. Caso deseje assistir um vídeo do programa em funcionamento basta clicar neste 
+                <a href="https://youtu.be/htQTw_FcHy8">link</a>.
             </p>
             <div class="project__button">
                 <a href="https://github.com/VG083/DetectorDeVeiculosEPedestres" class="button__viewCode">
