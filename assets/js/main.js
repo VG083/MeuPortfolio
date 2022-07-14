@@ -64,3 +64,8 @@ sr.reveal(`.profile__info-group`, {interval: 100, delay: 500})
 sr.reveal(`.profile__buttons`, {delay: 800})
 sr.reveal(`.filters__content`, {delay: 900})
 sr.reveal(`.filters`, {delay: 1000})
+
+sr.reveal(`.project__title`, {delay: 200})
+sr.reveal(`.project__subtitle`, {delay: 250})
+sr.reveal(`.project__container`, {delay: 300})
+sr.reveal(`.project__button`, {delay: 200})
