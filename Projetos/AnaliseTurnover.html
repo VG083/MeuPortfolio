@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto: Máquina Preditiva de Turnover de Funcionários</title>
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+        <!-- REMIX ICONS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/analiseTurnover.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            
+            <h1 class="project__title"><br>Máquina Preditiva de Turnover de Funcionários</h1>
+            <h3 class="project__subtitle">Análise de Dados</h3>
+        </header>
+
+        <!-- MAIN -->
+        <main class="profile container project__container">
+            <h4 class="project__text__title">1. Introdução</h4>
+            <p class="project__text">
+                Nesse projeto eu analisei uma base contendo dados de 15000 funcionários de uma dada empresa para realizar uma previsão de turnover. Ou seja, eu analisei a rotatividade de funcionários com o objetivo de descobrir os principais motivos que influenciam um funcionário dentro da empresa a sair dela.
+            </p>
+            <p class="project__text">
+                Para isso eu usei um arquivo .ipynb e utilizei as bibliotecas Pandas, NumPy, MatPlot, DataPrep e SKLearn.
+            </p>
+            <h4 class="project__text__title">2. Análise Pré Exploratória</h4>
+            <p class="project__text">
+                Para começar essa fase eu fiz uma análise da base de dados, e notei que haviam oito variáveis numéricas e duas variáveis escritas. Após isso eu criei um relatório automatizado da biblioteca dataprep.eda utilizando os dados da nossa base para estudar melhor individualmente cada variável. <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- satisfaction_level <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- last_evaluation <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- number_project <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- average_montly_hours <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- time_spend_company <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Work_accident <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- left <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- promotion_last_5years <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sales <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- salary
+            </p>
+            <h4 class="project__text__title">3. Melhorando a Base de Dados</h4>
+            <p class="project__text">
+                Observando a base de dados eu verifiquei que haviam alguns dados que podiam ser alterados para quando chegasse a hora de criar as máquinas preditivas.
+            </p>
+            <p class="project__text">
+                Então depois de analisar a variável 'sales' eu notei que o nome da variável estava errado, pois 'sales' já era uma das categorias contidas dentro da variável então eu mudei o nome da variável para 'department'. E ainda na variável 'department' eu juntei as categorias 'IT' e 'support' na categoria 'technical', visto que essas três categorias poderiam ser resumidas em apenas uma.
+            </p>
+            <p class="project__text">
+                Eu também decidi trocar as variáveis escritas por variáveis numéricas para que o algoritmo de Machine Learning pudesse alcançar uma acurácia maior no fim do projeto. Para isso eu realizei um processo de One Hot Encoding manual.
+            </p>
+            <p class="project__text">
+                Primeiro eu criei uma variável para cada categoria dentro de 'department', armazenando o valor 1 caso a categoria em questão seja a do funcionário e o valor 0 caso não seja a categoria referente do funcionário. Depois fiz o mesmo processo para a variável 'salary'. E então excluí as variáveis 'department' e 'salary' para manter apenas as variáveis numéricas na base de dados.
+            </p>
+            <p class="project__text">
+                Dessa forma foram criadas as seguintes variáveis: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_RandD <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_accounting <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_hr <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_management <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_marketing <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_product_mng <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_sales <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_technical <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- salary_high <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- salary_medium <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- salary_low
+            </p>
+            <h4 class="project__text__title">4. Seleção das Melhores Variáveis</h4>
+            <p class="project__text">
+                Após a criação de todas as variáveis numéricas, eu realizei uma RFE (Eliminação Recursiva de Atributos) utilizando um modelo de Regressão Logística que selecionou as 10 melhores variáveis entre as 19 disponíveis para criar uma máquina preditiva eficiente. Que foram: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- satisfaction_level <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- last_evaluation <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- time_spend_company <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Work_accident <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- promotion_last_5years <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_RandD <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_hr <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- department_management <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- salary_high <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- salary_low <br>
+            </p>
+            <h4 class="project__text__title">5. Criação de Máquinas Preditivas</h4>
+            <p class="project__text">
+                Com as principais variáveis devidamente escolhidas eu criei a primeira máquina preditiva utilizando o método de Regressão Logística porém ela alcançou uma acurácia relativamente baixa de 77,1%. Então eu criei uma segunda máquina preditiva, dessa vez utilizando o método de Random Forest que por sua vez teve uma acurácia de 97,8%. Eu ainda tentei utilizar uma máquina de XGBoost com 5000 árvores que chegou à um resultado de 97,7% de acurácia.
+            </p>
+            <div class="project__images">
+                <img src="../assets/img/analiseTurnover/roc.png" alt="Imagem da curva ROC" class="invert_image">
+            </div>
+            <h4 class="project__text__title">6. Análise das Máquinas Preditivas</h4>
+            <p class="project__text">
+                Observando a confusion matrix da máquina que utiliza Logistic Regression eu notei que ela tem uma taxa de 3468 acertos para 1032 erros.
+            </p>
+            <div class="project__images">
+                <img src="../assets/img/analiseTurnover/logisticRegression.png" alt="Heatmap da máquina de regressão logística" class="invert_image">
+            </div>
+            <p class="project__text">
+                Já as máquinas de Random Forest e XG Boost erraram 10 vezes menos do que a Logistic Regression. Atingindo uma taxa de 4403 acertos para 97 erros.
+            </p>
+            <div class="project__images">
+                <img src="../assets/img/analiseTurnover/xgBoost.png" alt="Heatmap da máquina de XG Boost" class="invert_image">
+                <img src="../assets/img/analiseTurnover/randomForest.png" alt="Heatmap da máquina de Random Forest" class="invert_image">
+            </div>
+            <h4 class="project__text__title">7. Considerações finais</h4>
+            <p class="project__text">
+                Para o fim da análise eu decidi que a máquina preditiva de Random Forest foi a melhor, já que ela atingiu uma taxa de acurácia 0,1% maior que a XG Boost, além de ser uma estrutura mais simples.
+            </p>
+            <p class="project__text">
+                E utilizando o modelo de classificação Random Forest, as características mais importantes que irão influenciar a saída do funcionário da empresa em ordem crescente são: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. department_management: 0.25% <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. promotion_last_5years: 0.26% <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. department_hr: 0.27% <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. department_RandD: 0.32% <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. salary_high: 0.68% <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. salary_low: 1.23% <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7. Work_accident: 1.51% <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8. last_evaluation: 18.27% <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9. time_spend_company: 26.41% <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10. satisfaction_level: 50.80% <br>
+            </p>
+            <div class="project__button">
+                <a href="https://github.com/VG083/AnaliseDeDadosTurnover/blob/main/analise.ipynb" class="button__viewCode">
+                    <i class="ri-line-chart-line"></i> Ver Análise Completa
+                </a>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; VG. All rights reserved
+                <br>
+                <img src="../assets/img/footer.png" id="footer__image" alt="">
+            </span>
+        </footer>
+
+        <!-- SCROLLREVEAL -->
+        <script src="../assets/js/scrollreveal.min.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
