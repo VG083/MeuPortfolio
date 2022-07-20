@@ -115,6 +115,10 @@ body.dark-theme {
     filter: invert();
 }
 
+.dark-theme .invert_image {
+    filter: invert();
+}
+
 .dark-theme .button__gray {
     background-color: var(--container-color);
 }
@@ -615,6 +619,13 @@ body.dark-theme {
     font-weight: 500;
     color: var(--text-color);
     margin-bottom: 0.1rem;
+}
+
+.project__text__title {
+    text-align: justify;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .project__text {
