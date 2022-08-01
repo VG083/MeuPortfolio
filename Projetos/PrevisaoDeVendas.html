@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto: Previsão de Vendas</title>
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+        <!-- REMIX ICONS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/previsaoDeVendas.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            
+            <h1 class="project__title"><br>Previsão de Vendas</h1>
+            <h3 class="project__subtitle">Análise de Dados</h3>
+        </header>
+
+        <!-- MAIN -->
+        <main class="profile container project__container">
+            <h4 class="project__text__title">1. Introdução</h4>
+            <p class="project__text">
+                Este projeto de análise de dados consiste em realizar uma previsão de vendas através de 3 variáveis que são os investimentos da empresa em propagandas para TV, rádio e jornal.
+            </p>
+            <p class="project__text">
+                Para isso eu usei um arquivo .ipynb e utilizei as bibliotecas Pandas, Seaborn, MatPlot e SKLearn.
+            </p>
+            <h4 class="project__text__title">2. Analisando a Base de Dados</h4>
+            <p class="project__text">
+                De início eu apenas importei o arquivo csv, contendo dados anteriores, analisei seu display e suas informações.
+            </p>
+            <p class="project__text">
+                A base veio sem erros para serem corrigidos, o que facilitou bastante o trabalho pois já que não havia erros na tabela eu pude partir direto para a fase de análise exploratória.
+            </p>
+            <h4 class="project__text__title">3. Análise Exploratória</h4>
+            <p class="project__text">
+                Criando um heatmap da correlação entre os itens na tabela já ficou óbvio que a relação de TV com vendas sendo a mais correlação mais estável, seguida por rádio e jornal.
+            </p>
+            <div class="project__images">
+                <img src="../assets/img/analisePrevisaoDeVendas/heatMapDeCorrelacao.png" alt="Heatmap de Correlação na Base de Dados">
+            </div>
+            <h4 class="project__text__title">4. Criando as Máquinas Preditivas</h4>
+            <p class="project__text">
+                Para realizar a previsão de vendas eu criei duas máquinas, uma utilizando o método de Regressão Linear que chegou a uma acurácia de 90,71% e outra máquina utilizando o método de Árvore de Decisão que chegou a uma acurácia de 96,35%
+            </p>
+            <div class="project__images">
+                <img src="../assets/img/analisePrevisaoDeVendas/niveisDeAcuracia.png" alt="Gráfico de linha comparando resultado de teste com respostas das máquinas preditivas">
+            </div>
+            <h4 class="project__text__title">5. Testando a Máquina Preditiva</h4>
+            <p class="project__text">
+                Já que a máquina preditiva de árvore de decisão obteve o maior nível de acurácia eu utilizei ela para testar uma segunda base de dados contendo apenas os valores de investimento em TV, rádio e jornal, no fim da previsão eu obtive os seguintes resultados para as vendas:
+            </p>
+            <table border="1">
+                <tr>
+                    <td class="project__text">TV</td>
+                    <td class="project__text">Rádio</td>
+                    <td class="project__text">Jornal</td>
+                    <td class="project__text">Vendas</td>
+                </tr>
+                <tr>
+                    <td class="project__text">23.1k</td>
+                    <td class="project__text">3.8k</td>
+                    <td class="project__text">69.2k</td>
+                    <td class="project__text">7.6M</td>
+                </tr>
+                <tr>
+                    <td class="project__text">44.5k</td>
+                    <td class="project__text">0</td>
+                    <td class="project__text">5.1k</td>
+                    <td class="project__text">8.9M</td>
+                </tr>
+                <tr>
+                    <td class="project__text">170.2k</td>
+                    <td class="project__text">45.9k</td>
+                    <td class="project__text">0</td>
+                    <td class="project__text">19.9M</td>
+                </tr>
+            </table>
+            <div class="project__button">
+                <a href="https://github.com/VG083/IntensivaoDePythonDaHashtag/blob/main/Aula%204%20Machine%20Learning.ipynb" class="button__viewCode">
+                    <i class="ri-line-chart-line"></i> Ver Análise Completa
+                </a>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; VG. All rights reserved
+                <br>
+                <img src="../assets/img/footer.png" id="footer__image" alt="">
+            </span>
+        </footer>
+
+        <!-- SCROLLREVEAL -->
+        <script src="../assets/js/scrollreveal.min.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

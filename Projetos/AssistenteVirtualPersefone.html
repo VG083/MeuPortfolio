@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto: Assistente Virtual: Perséfone</title>
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+        <!-- REMIX ICONS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/detectorDeVeiculosEPedestres.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+            
+            <h1 class="project__title"><br>Assistente Virtual: Perséfone</h1>
+            <h3 class="project__subtitle">Inteligência Artificial</h3>
+        </header>
+
+        <!-- MAIN -->
+        <main class="profile container project__container">
+            <p class="project__text">
+                Neste projeto eu construí um programa de inteligência artificial para me ajudar com 3 tarefas recorrentes do meu dia a dia. O projeto consiste em uma assistente virtual que através de comandos de voz podem: abrir programas, realizar pesquisas no google e realizar pesquisas no youtube. Como são atividades básicas eu utilizei apenas as bibliotecas do PyAutoGui, PyperClip e PyWhatKit.
+            </p>
+            <p class="project__text">
+                Antes de rodar os programas em uma máquina é preciso utilizar o comando "pip install -r requirements.txt" para ter acesso às bibliotecas necessárias para o funcionamento do programa.
+            </p>
+            <p class="project__text">
+                Ao utilizar o programa as funções de realizar pesquisas no google e realizar pesquisas no youtube vão rodar independente de qual seja a máquina pois são genéricas pórem como esse projeto foi feito pensando exclusivamente com o propósito de rodar na minha máquina, os endereços de atalhos dos aplicativos a serem abertos são referentes aos do meu computador. Então caso um usuário baixe o programa, é possível adaptar esses endereços mas se optar por não alterar o programa irá reconhecer que não há atalho salvo e irá abrir o menu iniciar para pesquisar pelo aplicativo em questão e abrir ele.
+            </p>
+            <div class="project__button">
+                <a href="https://github.com/VG083/PersefoneAssistenteVirtual" class="button__viewCode">
+                    <i class="ri-code-s-slash-line"></i> Ver código
+                </a>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; VG. All rights reserved
+                <br>
+                <img src="../assets/img/footer.png" id="footer__image" alt="">
+            </span>
+        </footer>
+
+        <!-- SCROLLREVEAL -->
+        <script src="../assets/js/scrollreveal.min.js"></script>
+
+        <!-- MAIN JS -->
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

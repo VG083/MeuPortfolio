@@ -8,7 +8,19 @@
     width: 300px;
 }
 
+td, th {
+    padding: .7em;
+    margin: 0;
+    /*border: 1px solid #ccc;*/
+    text-align: center;
+}
 
+table{
+    width: 100%;
+    margin-bottom : .5em;
+    table-layout: fixed;
+    text-align: center;
+}
 
 /* BREAKPOINTS */
     /* For small devices */
